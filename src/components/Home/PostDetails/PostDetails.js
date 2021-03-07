@@ -10,9 +10,9 @@ const PostDetails = () => {
         fetch(url)
         .then(res =>res.json())
         .then(data =>setPost(data));
-    },[]);
+    },[id]);
 
-    
+
     return (
         <div>
             <h1>Title: {post.title}</h1>
